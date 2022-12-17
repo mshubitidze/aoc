@@ -1,4 +1,5 @@
-rocks = [ [0, 1, 2, 3],
+rocks = [
+    [0, 1, 2, 3],
     [1, 1j, 1 + 1j, 2 + 1j, 1 + 2j],
     [0, 1, 2, 2 + 1j, 2 + 2j],
     [0, 1j, 2j, 3j],
@@ -30,6 +31,8 @@ ri = 0
 rock = {x + 2 + (height + 3) * 1j for x in rocks[ri]}
 
 T = 1_000_000_000_000
+
+offset = 0
 
 while rc < 2022:
     # Problem 1
