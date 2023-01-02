@@ -1999,26 +1999,13 @@ let input = `195
 8563
 8562`;
 
-let arr = input.split("\n").map(a => parseInt(a, 10))
+let arr = input.split("\n").map((a) => parseInt(a, 10));
 
-let count = 0
+let count = 0;
 for (let i = 0; i < arr.length; i++) {
-  if (i == arr.length - 3) break
-  if (arr.slice(i+1,i+4).reduce((a,b) => a+b) > arr.slice(i,i+3).reduce((a,b) => a+b)) count++
+  if (i == arr.length - 3) break;
+  if (arr.slice(i + 1, i + 4).reduce((a, b) => a + b) > arr.slice(i, i + 3).reduce((a, b) => a + b))
+    count++;
 }
 
-console.log(count)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(count);

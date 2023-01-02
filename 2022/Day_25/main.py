@@ -2,6 +2,7 @@ SNAFU = [x.strip() for x in open(0).read().splitlines()]
 
 sum = 0
 
+
 def convert_snafu(n):
     n = n[::-1]
     dec = 0
@@ -12,7 +13,7 @@ def convert_snafu(n):
             snafu = -2
         else:
             snafu = int(n[i])
-        dec += snafu * 5 ** i
+        dec += snafu * 5**i
     return dec
 
 
@@ -24,7 +25,7 @@ output = ""
 while sum:
     rem = sum % 5
     sum //= 5
-    
+
     if rem <= 2:
         output = str(rem) + output
     else:

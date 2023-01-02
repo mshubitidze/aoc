@@ -9,7 +9,7 @@ scanmap = {
     -1j: [-1j - 1, -1j, -1j + 1],
     1j: [1j - 1, 1j, 1j + 1],
     1: [1 - 1j, 1, 1 + 1j],
-    -1: [-1 - 1j, -1, -1 + 1j]
+    -1: [-1 - 1j, -1, -1 + 1j],
 }
 
 moves = [-1j, 1j, -1, 1]
@@ -49,13 +49,12 @@ while True:
                     elves.remove(elf)
                     elves.add(prop)
                 break
-    
+
     moves.append(moves.pop(0))
 
-
     if last == elves:
-            break
-    
+        break
+
     last = set(elves)
     iter += 1
 
