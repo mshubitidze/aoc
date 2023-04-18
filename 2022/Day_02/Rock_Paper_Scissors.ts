@@ -1,4 +1,4 @@
-input = `A X
+let input = `A X
 B Y
 B Y
 C X

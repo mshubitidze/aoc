@@ -32,14 +32,16 @@ while queue:
                 exit(0)
             nstage += 1
 
-        if (nr < 0 or nc < 0 or nr >= r or nc >= c) and (nr, nc) not in targets:
+        if (nr < 0 or nc < 0 or nr >= r or nc >= c) \
+                and (nr, nc) not in targets:
             continue
 
         fail = False
 
         if (nr, nc) not in targets:
             for i, tr, tc in ((0, 0, -1), (1, 0, 1), (2, -1, 0), (3, 1, 0)):
-                if ((nr - tr * time) % r, (nc - tc * time) % c) in blizzards[i]:
+                if ((nr - tr * time) % r, (nc - tc * time) % c) \
+                        in blizzards[i]:
                     fail = True
                     break
 

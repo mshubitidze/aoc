@@ -12,6 +12,7 @@ height = 0
 
 seen = {}
 
+
 # Problem 2
 def summarize():
     o = [-20] * 7

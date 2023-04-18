@@ -299,9 +299,7 @@ vgvWDMZvGpcqgqsP
 tSdtjLHLQLHjdFdDddQSQhwlsGqwQlqqqhQsPhGc
 tbRjtTLFRvTZDBrMrV`;
 
-// take the input and 
-
-
+// take the input and
 
 // let arr = i.split("\n");
 

@@ -529,7 +529,7 @@ lines = crates.split("\n")
 
 arr = []
 for line in lines:
-    arr.append([line[i:i+4].strip() for i in range(0,len(line), 4)])
+    arr.append([line[i : i + 4].strip() for i in range(0, len(line), 4)])
 
 
 arr.pop()
@@ -548,17 +548,18 @@ arr3 = [[i for i in j if i != ""] for j in arr2]
 print(arr3)
 
 instructions_arr = instructions.split("\n")
-instr_arr = [re.split(r'\s', i) for i in instructions_arr]
+instr_arr = [re.split(r"\s", i) for i in instructions_arr]
 
 newarr = [[int(j) for j in i if j.isdigit()] for i in instr_arr]
 
 print(newarr)
 
+
 def move_boxes(arr_instr, arr):
     [n, f, t] = arr_instr
-    boxes = arr[f-1][0:n][::-1]
-    arr[f-1] = arr[f-1][n:]
-    arr[t-1] = boxes + arr[t-1]
+    boxes = arr[f - 1][0:n][::-1]
+    arr[f - 1] = arr[f - 1][n:]
+    arr[t - 1] = boxes + arr[t - 1]
 
     return arr
 
@@ -576,5 +577,3 @@ for i in arr3:
     ans.append(i[0])
 
 print("".join(ans))
-
-
