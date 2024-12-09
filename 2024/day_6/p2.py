@@ -12,7 +12,7 @@ edges = set(
 
 possible_positions = [
     (i, j)
-    for i in range(curr_pos[0], len(input))
+    for i in range(len(input))
     for j in range(len(input[i]))
     if input[i][j] != "#" and input[i][j] != "^"
 ]
