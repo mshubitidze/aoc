@@ -13,7 +13,6 @@ def compute_all_variations(numbers):
     results = set()
     for ops in operations:
         result = numbers[0]
-        expression = str(numbers[0])
         for i, op in enumerate(ops):
             if op == "+":
                 result += numbers[i + 1]
@@ -21,7 +20,6 @@ def compute_all_variations(numbers):
                 result *= numbers[i + 1]
             elif op == "||":
                 result = int(str(result) + str(numbers[i + 1]))
-            expression += f" {op} {numbers[i + 1]}"
         results.add(result)
     return results
 
